@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title> My Webpage Design</title>
+</head>
+
+<body>
+    <header> <b>Tasty Bites</b></header>
+    
+    <nav>
+        <a href="home.html"> Home</a>
+        <a href="about.html"> About</a>
+        <a href="contact.html"> Contact</a>
+</nav>
+<h3>Our Menu</h3>
+    <div class="container">
+        <div class="box">
+    <img src="images/adobo.png" alt="Adobo">
+    <h2>Adobo</h2>
+    <p class="price">$50</p>
+    <button onclick="this.nextElementSibling.stepDown()">−</button>
+        <input type="number" name="quantity" min="1" max="100" value="1" step="1">
+        <button onclick="this.previousElementSibling.stepUp()">+</button>
+     <a href="#popup1" class="btn">Place order</a>
+ </div>
+    
+<div class="box">
+   <img src="images/sinigang.png" alt="sinigang">
+   <h2>Sinigang</h2>
+   <p class="price">$60</p>
+   <button onclick="this.nextElementSibling.stepDown()">−</button>
+        <input type="number" name="quantity" min="1" max="100" value="1" step="1">
+        <button onclick="this.previousElementSibling.stepUp()">+</button>
+   <a href="#popup2" class="btn">Place order</a>
+</div>
+    
+ <div class="box">
+   <img src="images/chicken.png" alt="chicken">
+   <h2>1-Piece Fried Chicken</h2>
+   <p class="price">$20</p>
+   <button onclick="this.nextElementSibling.stepDown()">−</button>
+   <input type="number" name="quantity" min="1" max="100" value="1" step="1">
+   <button onclick="this.previousElementSibling.stepUp()">+</button>
+   <a href="#popup3" class="btn">Place order</a>
+ </div>
+ </div>
+
+ <div id="popup1" class="popup">
+    <div class="popup-content">
+    <a href="#" class="close">&times;</a>
+    <h2>Enter Your Details</h2>
+    <form action="thankyou.html">
+    <label>Address:</label>
+    <input type="text" required placeholder="Enter your address">
+    <label>Phone#:</label>
+    <input type="tel" required placeholder="Enter your phone number">
+    <button type="submit" class="btn">Submit Order</button>
+ </form>
+ </div>
+ </div>
+<div id="popup2" class="popup">
+   <div class="popup-content">
+   <a href="#" class="close">&times;</a>
+   <h2>Enter Your Details</h2>
+   <form action="thankyou.html">
+   <label>Address:</label> 
+   <input type="text" required placeholder="Enter your address">
+   <label>Phone#:</label>
+   <input type="tel" required placeholder="Enter your phone number">
+   <button type="submit" class="btn">Submit Order</button>
+</form>
+</div>
+</div>
+   <div id="popup3" class="popup">
+     <div class="popup-content">
+     <a href="#" class="close">&times;</a>
+     <h2>Enter Your Details</h2>
+     <form action="thankyou.html">
+ <label>Address:</label>
+ <input type="text" required placeholder="Enter your address">
+ <label>Phone#:</label>
+ <input type="tel" required placeholder="Enter your phone number">
+ <button type="submit" class="btn">Submit Order</button>
+     </form>
+   </div>
+   </div>         
+   </div>
+   <footer> 
+    <p> &copy; 2025 My Website</p>
+   </footer>
+    
+    </body>
+    </html>

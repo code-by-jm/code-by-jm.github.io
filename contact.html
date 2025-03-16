@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <style>
+    body {
+        font-family: Arial, sans-serif;
+        background: url('images/bg.png');
+        margin: 0;
+        padding: 0;
+    }
+    
+    .contact-section {
+        width: 90%;
+        max-width: 600px;
+        margin: 30px auto;
+        padding: 20px;
+        background-color:white;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    
+    h2 {
+        text-align: center;
+        color: black;
+    }
+    
+    form input, form textarea, form button {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border-radius: 4px;
+        border: 1px solid white;
+        font-size: 16px;
+    }
+    
+    form button {
+        background-color:orangered;
+        color: white;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.5s ease;
+    }
+    
+    form button:hover {
+        background-color:lightgreen;
+    }
+    
+    .contact-details, .social-media {
+        margin-top: 20px;
+    }
+    
+    .contact-details p, .social-media a {
+        color: gray;
+        text-decoration: none;
+        display: block;
+        margin-bottom: 5px;
+    }
+    
+    .social-media a:hover {
+        color: orangered;
+    }
+</style>
+    <title>Contact Us</title>
+</head>
+<body>
+
+    <div class="contact-section">
+        <h2>Contact Us</h2>
+
+        <form id="thankyou">
+            <input type="text" name="name" placeholder="Your Name" required />
+            <input type="email" name="email" placeholder="Your Email" required />
+            <input type="tel" name="phone" placeholder="Your Phone (Optional)" />
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+        <script>
+            document.getElementById("thankyou").addEventListener("submit", function(event) {
+                event.preventDefault();
+                alert("Thank you for your feedback!");
+            });
+        </script>
+
+        <div class="contact-details">
+            <p><strong>Phone:</strong> 098113502779</p>
+            <p><strong>Email:</strong> susasjonmel_bsit@plmun.edu.ph</p>
+            <p><strong>Address:</strong> Biazon Phase 1, Muntinlupa</p>
+        </div>
+
+        <div class="social-media">
+            <a href="https://www.facebook.com/jonmel.susas.13">Facebook</a>
+            <a href="https://www.instagram.com/_urboijms?igsh=MXV4em9qZ3AyaWUyMQ==">Instagram</a>
+        </div>
+    </div>
+
+</body>
+</html>
